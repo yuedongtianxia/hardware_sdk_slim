@@ -27,6 +27,7 @@
     	
     	public boolean insertRecord(String did, int stepCount, float disM, int calorie, long startTimeMs, long endTimeMs)
 	    插入计步数据，需要授权之后才能进行
+            did 用于区分设备的deviceId硬件App自己定义，stepCount步数，disM距离单位米，calorie卡路里单位小卡，startTimeMs，endTimeMs时间段，单位Millis。
     	
     	public YDRecordSyncTool getSyncTool()
 	    获取同步工具类
