@@ -42,16 +42,16 @@
     	void onYDAuthUserCancel();
 	
 	YDRecordSyncTool 数据同步工具类
-	public boolean needInit() 
-	判断是否需要初始化
-	public void init(YDNetInterface netInterface)
-	进行初始化操作
-	public void trySyncRecords(YDRecordSyncCallback callback)
-	尝试进行同步数据，操作结果会通过callback回调
+		public boolean needInit() 
+		判断是否需要初始化
+		public void init(YDNetInterface netInterface)
+		进行初始化操作
+		public void trySyncRecords(YDRecordSyncCallback callback)
+		尝试进行同步数据，操作结果会通过callback回调
 	
 	YDNetInterface 网络操作接口 异步
 	设计目的，未避免sdk中插入网络框架等，将网络操作提炼未一个接口，由接入sdk方基于原有网络框架实现
-	Cancelable asyncPost(String url, HashMap<String, String> params, YDNetCallback callback);
+		Cancelable asyncPost(String url, HashMap<String, String> params, YDNetCallback callback);
 	
 	YDNetCallback 网络操作回调接口
-    void onNetFinished(int code, JSONObject netRes, String errorMsg);
+    	void onNetFinished(int code, JSONObject netRes, String errorMsg);
