@@ -1,2 +1,3 @@
 local.properties
 android_sdk/build/
+android_sdk/.gradle/
