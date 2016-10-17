@@ -8,8 +8,6 @@
 需要提前向悦动圈申请Appid，用以授权等操作
 
 ##Android sdk
-###YDHardwareSDK
-主要操作类
 
     YDHardwareSDK
 	    public static YDHardwareSDK instance() 
