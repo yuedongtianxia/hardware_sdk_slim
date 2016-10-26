@@ -4,6 +4,8 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
+import android.content.pm.ResolveInfo;
 import android.database.sqlite.SQLiteDatabase;
 import android.net.Uri;
 import android.text.TextUtils;
@@ -54,6 +56,12 @@ public class YDHardwareSDK {
     private static final String kKeyStatus = "status";
     private void saveAuthInfo() {
         sp().edit().putString(kKeyUid, uid).putString(kKeyToken, token).putInt(kKeyStatus, status.value).apply();
+    }
+
+    public boolean isYuedongInstalled(Context context) {
+        PackageManager pm = context.getPackageManager();
+        Intent intent = pm.getLaunchIntentForPackage("com.yuedong.sport");
+        return intent != null;
     }
 
     private void loadAuthInfo() {
@@ -110,10 +118,21 @@ public class YDHardwareSDK {
             listener.onYDAuthFail("need config before auth");
             return;
         }
-        this.listener = listener;
-        this.requestCode = requestCode;
+        if(!isYuedongInstalled(activity)) {
+            listener.onYDAuthFail("悦动圈not install");
+            return;
+        }
+
         String url = "yuedongopen://authorize?app_id=" + appId;
         Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
+        PackageManager packageManager = activity.getPackageManager();
+        ResolveInfo resolveInfo = packageManager.resolveActivity(intent, 0);
+        if(resolveInfo == null) {
+            listener.onYDAuthFail("请升级最新版悦动圈");
+            return;
+        }
+        this.listener = listener;
+        this.requestCode = requestCode;
         activity.startActivityForResult(intent, requestCode);
     }
 
