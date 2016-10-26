@@ -5,6 +5,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.database.sqlite.SQLiteDatabase;
+import android.net.Uri;
 import android.text.TextUtils;
 
 import com.yuedong.hardware.slim.sdk.db.TableYDStep;
@@ -31,6 +32,11 @@ public class YDHardwareSDK {
         this.appContext = appContext;
         this.appId = appId;
         loadAuthInfo();
+    }
+
+    void onTokenExpiration() {
+        status = SDKStatus.kExpiration;
+        saveAuthInfo();
     }
 
     public SDKStatus status = SDKStatus.kUnAuthenticate;
@@ -66,7 +72,7 @@ public class YDHardwareSDK {
         if(requestCode != this.requestCode) {
             return;
         }
-        if(listener != null) {
+        if(listener == null) {
             return;
         }
         if(resultCode == Activity.RESULT_OK) {
@@ -106,7 +112,8 @@ public class YDHardwareSDK {
         }
         this.listener = listener;
         this.requestCode = requestCode;
-        Intent intent = new Intent();
+        String url = "yuedongopen://authorize?app_id=" + appId;
+        Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
         activity.startActivityForResult(intent, requestCode);
     }
 

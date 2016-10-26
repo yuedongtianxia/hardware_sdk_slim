@@ -7,5 +7,7 @@ import org.json.JSONObject;
  */
 
 public interface YDNetCallback {
+    int kNetError = -1;
+    int kNetJsonFormatError = -2;
     void onNetFinished(int code, JSONObject netRes, String errorMsg);
 }

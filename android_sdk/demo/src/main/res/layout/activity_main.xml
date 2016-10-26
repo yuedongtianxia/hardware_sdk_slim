@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yuedong.open.demo.MainActivity">
+
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:id="@+id/label_status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="20dp"
+        android:id="@+id/bn_auth"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="跳转授权" />
+
+    <EditText
+        android:layout_marginTop="20dp"
+        android:id="@+id/edit_st"
+        android:hint="start时间sec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:hint="end时间sec"
+        android:id="@+id/edit_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:hint="步数"
+        android:id="@+id/edit_step"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/bn_insert"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="插入" />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/bn_sync"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="同步" />
+</LinearLayout>

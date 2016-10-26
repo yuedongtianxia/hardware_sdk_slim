@@ -14,7 +14,7 @@ import java.util.LinkedList;
 
 public class YDRecordSyncTool implements Cancelable, YDNetCallback {
     private YDNetInterface netInterface;
-    private static final String kPostUrl = "";
+    private static final String kPostUrl = "http://api.51yund.com/hardware/report_hardware_step_by_slim_sdk";
     public void init(YDNetInterface netInterface) {
         this.netInterface = netInterface;
     }
@@ -69,9 +69,9 @@ public class YDRecordSyncTool implements Cancelable, YDNetCallback {
         }
         YDHttpParams params = new YDHttpParams();
         params.put("steps", jsonArray.toString());
-        params.put("uid", sdk.uid);
+        params.put("user_id", sdk.uid);
         params.put("token", sdk.token);
-        params.put("appid", sdk.appId);
+        params.put("app_id", sdk.appId);
         request = netInterface.asyncPost(kPostUrl, params, this);
     }
 
@@ -100,6 +100,9 @@ public class YDRecordSyncTool implements Cancelable, YDNetCallback {
             if(c == 0) {
                 TableYDStep.removeRecords(sdk.db(), maxRecordTs);
                 callback.onRecordSyncSucc();
+            } else if(c == 404){
+                sdk.onTokenExpiration();
+                callback.onRecordSyncFail(YDRecordSyncCallback.kCodeExpiration, netRes.optString("msg"));
             } else {
                 callback.onRecordSyncFail(c, netRes.optString("msg"));
             }
