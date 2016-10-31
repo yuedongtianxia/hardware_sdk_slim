@@ -1,0 +1,6 @@
+framework module hardware_sdk {
+  umbrella header "hardware_sdk.h"
+
+  export *
+  module * { export * }
+}
