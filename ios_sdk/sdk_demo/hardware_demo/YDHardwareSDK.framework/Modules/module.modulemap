@@ -1,0 +1,6 @@
+framework module YDHardwareSDK {
+  umbrella header "YDHardwareSDK.h"
+
+  export *
+  module * { export * }
+}
