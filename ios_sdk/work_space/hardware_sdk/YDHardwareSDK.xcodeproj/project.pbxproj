@@ -1,0 +1,786 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		4DE41F171DC74D22000EBD41 /* YDHardwareSDK_aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 4DE41F181DC74D23000EBD41 /* Build configuration list for PBXAggregateTarget "YDHardwareSDK_aggregate" */;
+			buildPhases = (
+				4DE41F1B1DC74D4B000EBD41 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = YDHardwareSDK_aggregate;
+			productName = hardware_sdk_aggregate;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		4D4205A61DE2DAC800067C1B /* YDNetworkDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D4205A31DE2DAC800067C1B /* YDNetworkDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D4205A71DE2DAC800067C1B /* YDOpenHardwareDP.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D4205A41DE2DAC800067C1B /* YDOpenHardwareDP.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D4205A81DE2DAC800067C1B /* YDOpenHardwareDP.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4205A51DE2DAC800067C1B /* YDOpenHardwareDP.m */; };
+		4D4205AF1DE2E07300067C1B /* YDOpenHardwarePedometerNWDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D4205AB1DE2E07300067C1B /* YDOpenHardwarePedometerNWDAO.h */; };
+		4D4205B01DE2E07300067C1B /* YDOpenHardwarePedometerNWDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4205AC1DE2E07300067C1B /* YDOpenHardwarePedometerNWDAO.m */; };
+		4D461E631DCB214900167955 /* YDOpenHardwareDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D461E3D1DCB214900167955 /* YDOpenHardwareDB.h */; };
+		4D461E641DCB214900167955 /* YDOpenHardwareDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D461E3E1DCB214900167955 /* YDOpenHardwareDB.m */; };
+		4D461E671DCB214900167955 /* YDOpenHardwareHeartRateDBDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D461E421DCB214900167955 /* YDOpenHardwareHeartRateDBDAO.h */; };
+		4D461E681DCB214900167955 /* YDOpenHardwareHeartRateDBDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D461E431DCB214900167955 /* YDOpenHardwareHeartRateDBDAO.m */; };
+		4D461E691DCB214900167955 /* YDOpenHardwareIntelligentScaleDBDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D461E441DCB214900167955 /* YDOpenHardwareIntelligentScaleDBDAO.h */; };
+		4D461E6A1DCB214900167955 /* YDOpenHardwareIntelligentScaleDBDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D461E451DCB214900167955 /* YDOpenHardwareIntelligentScaleDBDAO.m */; };
+		4D461E6B1DCB214900167955 /* YDOpenHardwarePedometerDBDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D461E461DCB214900167955 /* YDOpenHardwarePedometerDBDAO.h */; };
+		4D461E6C1DCB214900167955 /* YDOpenHardwarePedometerDBDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D461E471DCB214900167955 /* YDOpenHardwarePedometerDBDAO.m */; };
+		4D461E6D1DCB214900167955 /* YDOpenHardwareSleepDBDAO.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D461E481DCB214900167955 /* YDOpenHardwareSleepDBDAO.h */; };
+		4D461E6E1DCB214900167955 /* YDOpenHardwareSleepDBDAO.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D461E491DCB214900167955 /* YDOpenHardwareSleepDBDAO.m */; };
+		4D461E711DCB214900167955 /* YDOpenHardwareHeartRate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D461E4D1DCB214900167955 /* YDOpenHardwareHeartRate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D461E721DCB214900167955 /* YDOpenHardwareHeartRate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D461E4E1DCB214900167955 /* YDOpenHardwareHeartRate.m */; };
+		4D461E731DCB214900167955 /* YDOpenHardwareIntelligentScale.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D461E4F1DCB214900167955 /* YDOpenHardwareIntelligentScale.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D461E741DCB214900167955 /* YDOpenHardwareIntelligentScale.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D461E501DCB214900167955 /* YDOpenHardwareIntelligentScale.m */; };
+		4D461E751DCB214900167955 /* YDOpenHardwarePedometer.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D461E511DCB214900167955 /* YDOpenHardwarePedometer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D461E761DCB214900167955 /* YDOpenHardwarePedometer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D461E521DCB214900167955 /* YDOpenHardwarePedometer.m */; };
+		4D461E771DCB214900167955 /* YDOpenHardwareSleep.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D461E531DCB214900167955 /* YDOpenHardwareSleep.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D461E781DCB214900167955 /* YDOpenHardwareSleep.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D461E541DCB214900167955 /* YDOpenHardwareSleep.m */; };
+		4D461E791DCB214900167955 /* YDOpenHardwareStatus.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D461E551DCB214900167955 /* YDOpenHardwareStatus.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D461E881DCB220200167955 /* MSJsonKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D461E861DCB220200167955 /* MSJsonKit.h */; };
+		4D461E891DCB220200167955 /* MSJsonKit.mm in Sources */ = {isa = PBXBuildFile; fileRef = 4D461E871DCB220200167955 /* MSJsonKit.mm */; };
+		4D461E8C1DCB223000167955 /* YDOpenHardwareCoreDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D461E8B1DCB223000167955 /* YDOpenHardwareCoreDefine.h */; };
+		4DDF90961DCC702A002DB881 /* YDOpenHardwareKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DDF90941DCC702A002DB881 /* YDOpenHardwareKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DDF90971DCC702A002DB881 /* YDOpenHardwareKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDF90951DCC702A002DB881 /* YDOpenHardwareKit.m */; };
+		4DDF909B1DCC8BDD002DB881 /* YDPreference.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DDF90991DCC8BDD002DB881 /* YDPreference.h */; };
+		4DDF909C1DCC8BDD002DB881 /* YDPreference.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDF909A1DCC8BDD002DB881 /* YDPreference.m */; };
+		4DE41E3E1DC74B8F000EBD41 /* YDHardwareSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE41E341DC74B8F000EBD41 /* YDHardwareSDK.framework */; };
+		4DE41E431DC74B8F000EBD41 /* hardware_sdkTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE41E421DC74B8F000EBD41 /* hardware_sdkTests.m */; };
+		4DE41E451DC74B8F000EBD41 /* YDHardwareSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE41E371DC74B8F000EBD41 /* YDHardwareSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DE41F291DC75078000EBD41 /* YDFMDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE41F1E1DC75078000EBD41 /* YDFMDatabase.h */; };
+		4DE41F2A1DC75078000EBD41 /* YDFMDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE41F1F1DC75078000EBD41 /* YDFMDatabase.m */; };
+		4DE41F2B1DC75078000EBD41 /* YDFMDatabaseAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE41F201DC75078000EBD41 /* YDFMDatabaseAdditions.h */; };
+		4DE41F2C1DC75078000EBD41 /* YDFMDatabaseAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE41F211DC75078000EBD41 /* YDFMDatabaseAdditions.m */; };
+		4DE41F2D1DC75078000EBD41 /* YDFMDatabasePool.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE41F221DC75078000EBD41 /* YDFMDatabasePool.h */; };
+		4DE41F2E1DC75078000EBD41 /* YDFMDatabasePool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE41F231DC75078000EBD41 /* YDFMDatabasePool.m */; };
+		4DE41F2F1DC75078000EBD41 /* YDFMDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE41F241DC75078000EBD41 /* YDFMDatabaseQueue.h */; };
+		4DE41F301DC75078000EBD41 /* YDFMDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE41F251DC75078000EBD41 /* YDFMDatabaseQueue.m */; };
+		4DE41F311DC75078000EBD41 /* YDFMDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE41F261DC75078000EBD41 /* YDFMDB.h */; };
+		4DE41F321DC75078000EBD41 /* YDFMResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE41F271DC75078000EBD41 /* YDFMResultSet.m */; };
+		4DE41F331DC75078000EBD41 /* YDFMResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE41F281DC75078000EBD41 /* YDFMResultSet.h */; };
+		4DE41F361DC76945000EBD41 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DE41F351DC76945000EBD41 /* libsqlite3.0.tbd */; };
+		4DE41F3F1DC82AA9000EBD41 /* MSDatabaseQueue.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE41F391DC82AA9000EBD41 /* MSDatabaseQueue.h */; };
+		4DE41F401DC82AA9000EBD41 /* MSDatabaseQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE41F3A1DC82AA9000EBD41 /* MSDatabaseQueue.m */; };
+		4DE41F411DC82AA9000EBD41 /* MSDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE41F3B1DC82AA9000EBD41 /* MSDB.h */; };
+		4DE41F421DC82AA9000EBD41 /* MSDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE41F3C1DC82AA9000EBD41 /* MSDB.m */; };
+		4DE41F431DC82AA9000EBD41 /* MSMTSDB.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DE41F3D1DC82AA9000EBD41 /* MSMTSDB.h */; };
+		4DE41F441DC82AA9000EBD41 /* MSMTSDB.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DE41F3E1DC82AA9000EBD41 /* MSMTSDB.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4DE41E3F1DC74B8F000EBD41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4DE41E2B1DC74B8F000EBD41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4DE41E331DC74B8F000EBD41;
+			remoteInfo = hardware_sdk;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D4205A31DE2DAC800067C1B /* YDNetworkDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDNetworkDelegate.h; sourceTree = "<group>"; };
+		4D4205A41DE2DAC800067C1B /* YDOpenHardwareDP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareDP.h; sourceTree = "<group>"; };
+		4D4205A51DE2DAC800067C1B /* YDOpenHardwareDP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareDP.m; sourceTree = "<group>"; };
+		4D4205AB1DE2E07300067C1B /* YDOpenHardwarePedometerNWDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwarePedometerNWDAO.h; sourceTree = "<group>"; };
+		4D4205AC1DE2E07300067C1B /* YDOpenHardwarePedometerNWDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwarePedometerNWDAO.m; sourceTree = "<group>"; };
+		4D461E3D1DCB214900167955 /* YDOpenHardwareDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareDB.h; sourceTree = "<group>"; };
+		4D461E3E1DCB214900167955 /* YDOpenHardwareDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareDB.m; sourceTree = "<group>"; };
+		4D461E421DCB214900167955 /* YDOpenHardwareHeartRateDBDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareHeartRateDBDAO.h; sourceTree = "<group>"; };
+		4D461E431DCB214900167955 /* YDOpenHardwareHeartRateDBDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareHeartRateDBDAO.m; sourceTree = "<group>"; };
+		4D461E441DCB214900167955 /* YDOpenHardwareIntelligentScaleDBDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareIntelligentScaleDBDAO.h; sourceTree = "<group>"; };
+		4D461E451DCB214900167955 /* YDOpenHardwareIntelligentScaleDBDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareIntelligentScaleDBDAO.m; sourceTree = "<group>"; };
+		4D461E461DCB214900167955 /* YDOpenHardwarePedometerDBDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwarePedometerDBDAO.h; sourceTree = "<group>"; };
+		4D461E471DCB214900167955 /* YDOpenHardwarePedometerDBDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwarePedometerDBDAO.m; sourceTree = "<group>"; };
+		4D461E481DCB214900167955 /* YDOpenHardwareSleepDBDAO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareSleepDBDAO.h; sourceTree = "<group>"; };
+		4D461E491DCB214900167955 /* YDOpenHardwareSleepDBDAO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareSleepDBDAO.m; sourceTree = "<group>"; };
+		4D461E4D1DCB214900167955 /* YDOpenHardwareHeartRate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareHeartRate.h; sourceTree = "<group>"; };
+		4D461E4E1DCB214900167955 /* YDOpenHardwareHeartRate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareHeartRate.m; sourceTree = "<group>"; };
+		4D461E4F1DCB214900167955 /* YDOpenHardwareIntelligentScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareIntelligentScale.h; sourceTree = "<group>"; };
+		4D461E501DCB214900167955 /* YDOpenHardwareIntelligentScale.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareIntelligentScale.m; sourceTree = "<group>"; };
+		4D461E511DCB214900167955 /* YDOpenHardwarePedometer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwarePedometer.h; sourceTree = "<group>"; };
+		4D461E521DCB214900167955 /* YDOpenHardwarePedometer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwarePedometer.m; sourceTree = "<group>"; };
+		4D461E531DCB214900167955 /* YDOpenHardwareSleep.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareSleep.h; sourceTree = "<group>"; };
+		4D461E541DCB214900167955 /* YDOpenHardwareSleep.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareSleep.m; sourceTree = "<group>"; };
+		4D461E551DCB214900167955 /* YDOpenHardwareStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareStatus.h; sourceTree = "<group>"; };
+		4D461E861DCB220200167955 /* MSJsonKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSJsonKit.h; sourceTree = "<group>"; };
+		4D461E871DCB220200167955 /* MSJsonKit.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MSJsonKit.mm; sourceTree = "<group>"; };
+		4D461E8B1DCB223000167955 /* YDOpenHardwareCoreDefine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareCoreDefine.h; sourceTree = "<group>"; };
+		4DDF90941DCC702A002DB881 /* YDOpenHardwareKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDOpenHardwareKit.h; sourceTree = "<group>"; };
+		4DDF90951DCC702A002DB881 /* YDOpenHardwareKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDOpenHardwareKit.m; sourceTree = "<group>"; };
+		4DDF90991DCC8BDD002DB881 /* YDPreference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDPreference.h; sourceTree = "<group>"; };
+		4DDF909A1DCC8BDD002DB881 /* YDPreference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDPreference.m; sourceTree = "<group>"; };
+		4DE41E341DC74B8F000EBD41 /* YDHardwareSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = YDHardwareSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE41E371DC74B8F000EBD41 /* YDHardwareSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YDHardwareSDK.h; sourceTree = "<group>"; };
+		4DE41E381DC74B8F000EBD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE41E3D1DC74B8F000EBD41 /* YDHardwareSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YDHardwareSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4DE41E421DC74B8F000EBD41 /* hardware_sdkTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = hardware_sdkTests.m; sourceTree = "<group>"; };
+		4DE41E441DC74B8F000EBD41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4DE41F1E1DC75078000EBD41 /* YDFMDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDFMDatabase.h; sourceTree = "<group>"; };
+		4DE41F1F1DC75078000EBD41 /* YDFMDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDFMDatabase.m; sourceTree = "<group>"; };
+		4DE41F201DC75078000EBD41 /* YDFMDatabaseAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDFMDatabaseAdditions.h; sourceTree = "<group>"; };
+		4DE41F211DC75078000EBD41 /* YDFMDatabaseAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDFMDatabaseAdditions.m; sourceTree = "<group>"; };
+		4DE41F221DC75078000EBD41 /* YDFMDatabasePool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDFMDatabasePool.h; sourceTree = "<group>"; };
+		4DE41F231DC75078000EBD41 /* YDFMDatabasePool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDFMDatabasePool.m; sourceTree = "<group>"; };
+		4DE41F241DC75078000EBD41 /* YDFMDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDFMDatabaseQueue.h; sourceTree = "<group>"; };
+		4DE41F251DC75078000EBD41 /* YDFMDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDFMDatabaseQueue.m; sourceTree = "<group>"; };
+		4DE41F261DC75078000EBD41 /* YDFMDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDFMDB.h; sourceTree = "<group>"; };
+		4DE41F271DC75078000EBD41 /* YDFMResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YDFMResultSet.m; sourceTree = "<group>"; };
+		4DE41F281DC75078000EBD41 /* YDFMResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YDFMResultSet.h; sourceTree = "<group>"; };
+		4DE41F351DC76945000EBD41 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		4DE41F391DC82AA9000EBD41 /* MSDatabaseQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDatabaseQueue.h; sourceTree = "<group>"; };
+		4DE41F3A1DC82AA9000EBD41 /* MSDatabaseQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDatabaseQueue.m; sourceTree = "<group>"; };
+		4DE41F3B1DC82AA9000EBD41 /* MSDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSDB.h; sourceTree = "<group>"; };
+		4DE41F3C1DC82AA9000EBD41 /* MSDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSDB.m; sourceTree = "<group>"; };
+		4DE41F3D1DC82AA9000EBD41 /* MSMTSDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSMTSDB.h; sourceTree = "<group>"; };
+		4DE41F3E1DC82AA9000EBD41 /* MSMTSDB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSMTSDB.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4DE41E301DC74B8F000EBD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE41F361DC76945000EBD41 /* libsqlite3.0.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE41E3A1DC74B8F000EBD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE41E3E1DC74B8F000EBD41 /* YDHardwareSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D461E3B1DCB214900167955 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				4D461E3C1DCB214900167955 /* db */,
+				4D461E3F1DCB214900167955 /* dbdao */,
+				4D461E4A1DCB214900167955 /* model */,
+				4D461E561DCB214900167955 /* nwdao */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		4D461E3C1DCB214900167955 /* db */ = {
+			isa = PBXGroup;
+			children = (
+				4D461E3D1DCB214900167955 /* YDOpenHardwareDB.h */,
+				4D461E3E1DCB214900167955 /* YDOpenHardwareDB.m */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		4D461E3F1DCB214900167955 /* dbdao */ = {
+			isa = PBXGroup;
+			children = (
+				4D461E421DCB214900167955 /* YDOpenHardwareHeartRateDBDAO.h */,
+				4D461E431DCB214900167955 /* YDOpenHardwareHeartRateDBDAO.m */,
+				4D461E441DCB214900167955 /* YDOpenHardwareIntelligentScaleDBDAO.h */,
+				4D461E451DCB214900167955 /* YDOpenHardwareIntelligentScaleDBDAO.m */,
+				4D461E461DCB214900167955 /* YDOpenHardwarePedometerDBDAO.h */,
+				4D461E471DCB214900167955 /* YDOpenHardwarePedometerDBDAO.m */,
+				4D461E481DCB214900167955 /* YDOpenHardwareSleepDBDAO.h */,
+				4D461E491DCB214900167955 /* YDOpenHardwareSleepDBDAO.m */,
+			);
+			path = dbdao;
+			sourceTree = "<group>";
+		};
+		4D461E4A1DCB214900167955 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				4D461E4D1DCB214900167955 /* YDOpenHardwareHeartRate.h */,
+				4D461E4E1DCB214900167955 /* YDOpenHardwareHeartRate.m */,
+				4D461E4F1DCB214900167955 /* YDOpenHardwareIntelligentScale.h */,
+				4D461E501DCB214900167955 /* YDOpenHardwareIntelligentScale.m */,
+				4D461E511DCB214900167955 /* YDOpenHardwarePedometer.h */,
+				4D461E521DCB214900167955 /* YDOpenHardwarePedometer.m */,
+				4D461E531DCB214900167955 /* YDOpenHardwareSleep.h */,
+				4D461E541DCB214900167955 /* YDOpenHardwareSleep.m */,
+				4D461E551DCB214900167955 /* YDOpenHardwareStatus.h */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		4D461E561DCB214900167955 /* nwdao */ = {
+			isa = PBXGroup;
+			children = (
+				4D4205AB1DE2E07300067C1B /* YDOpenHardwarePedometerNWDAO.h */,
+				4D4205AC1DE2E07300067C1B /* YDOpenHardwarePedometerNWDAO.m */,
+			);
+			path = nwdao;
+			sourceTree = "<group>";
+		};
+		4D461E5B1DCB214900167955 /* private_interface */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = private_interface;
+			sourceTree = "<group>";
+		};
+		4D461E851DCB220200167955 /* ms_json_kit */ = {
+			isa = PBXGroup;
+			children = (
+				4D461E861DCB220200167955 /* MSJsonKit.h */,
+				4D461E871DCB220200167955 /* MSJsonKit.mm */,
+			);
+			path = ms_json_kit;
+			sourceTree = "<group>";
+		};
+		4D461E8A1DCB223000167955 /* const */ = {
+			isa = PBXGroup;
+			children = (
+				4D461E8B1DCB223000167955 /* YDOpenHardwareCoreDefine.h */,
+			);
+			path = const;
+			sourceTree = "<group>";
+		};
+		4D48FED91DCB6A8D0078E159 /* interface */ = {
+			isa = PBXGroup;
+			children = (
+				4DDF90941DCC702A002DB881 /* YDOpenHardwareKit.h */,
+				4DDF90951DCC702A002DB881 /* YDOpenHardwareKit.m */,
+				4D4205A31DE2DAC800067C1B /* YDNetworkDelegate.h */,
+				4D4205A41DE2DAC800067C1B /* YDOpenHardwareDP.h */,
+				4D4205A51DE2DAC800067C1B /* YDOpenHardwareDP.m */,
+			);
+			path = interface;
+			sourceTree = "<group>";
+		};
+		4DDF90981DCC8BB7002DB881 /* preference */ = {
+			isa = PBXGroup;
+			children = (
+				4DDF90991DCC8BDD002DB881 /* YDPreference.h */,
+				4DDF909A1DCC8BDD002DB881 /* YDPreference.m */,
+			);
+			path = preference;
+			sourceTree = "<group>";
+		};
+		4DE41E2A1DC74B8F000EBD41 = {
+			isa = PBXGroup;
+			children = (
+				4DE41F371DC82A84000EBD41 /* yd_sdk */,
+				4DE41F1C1DC74F96000EBD41 /* third_part */,
+				4DE41E361DC74B8F000EBD41 /* hardware_sdk */,
+				4DE41E411DC74B8F000EBD41 /* hardware_sdkTests */,
+				4DE41E351DC74B8F000EBD41 /* Products */,
+				4DE41F341DC76945000EBD41 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4DE41E351DC74B8F000EBD41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4DE41E341DC74B8F000EBD41 /* YDHardwareSDK.framework */,
+				4DE41E3D1DC74B8F000EBD41 /* YDHardwareSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4DE41E361DC74B8F000EBD41 /* hardware_sdk */ = {
+			isa = PBXGroup;
+			children = (
+				4D461E8A1DCB223000167955 /* const */,
+				4D461E3B1DCB214900167955 /* data */,
+				4D461E5B1DCB214900167955 /* private_interface */,
+				4D48FED91DCB6A8D0078E159 /* interface */,
+				4DE41E371DC74B8F000EBD41 /* YDHardwareSDK.h */,
+				4DE41E381DC74B8F000EBD41 /* Info.plist */,
+			);
+			path = hardware_sdk;
+			sourceTree = "<group>";
+		};
+		4DE41E411DC74B8F000EBD41 /* hardware_sdkTests */ = {
+			isa = PBXGroup;
+			children = (
+				4DE41E421DC74B8F000EBD41 /* hardware_sdkTests.m */,
+				4DE41E441DC74B8F000EBD41 /* Info.plist */,
+			);
+			path = hardware_sdkTests;
+			sourceTree = "<group>";
+		};
+		4DE41F1C1DC74F96000EBD41 /* third_part */ = {
+			isa = PBXGroup;
+			children = (
+				4DE41F1D1DC75078000EBD41 /* yd_fmdb */,
+			);
+			path = third_part;
+			sourceTree = "<group>";
+		};
+		4DE41F1D1DC75078000EBD41 /* yd_fmdb */ = {
+			isa = PBXGroup;
+			children = (
+				4DE41F1E1DC75078000EBD41 /* YDFMDatabase.h */,
+				4DE41F1F1DC75078000EBD41 /* YDFMDatabase.m */,
+				4DE41F201DC75078000EBD41 /* YDFMDatabaseAdditions.h */,
+				4DE41F211DC75078000EBD41 /* YDFMDatabaseAdditions.m */,
+				4DE41F221DC75078000EBD41 /* YDFMDatabasePool.h */,
+				4DE41F231DC75078000EBD41 /* YDFMDatabasePool.m */,
+				4DE41F241DC75078000EBD41 /* YDFMDatabaseQueue.h */,
+				4DE41F251DC75078000EBD41 /* YDFMDatabaseQueue.m */,
+				4DE41F261DC75078000EBD41 /* YDFMDB.h */,
+				4DE41F271DC75078000EBD41 /* YDFMResultSet.m */,
+				4DE41F281DC75078000EBD41 /* YDFMResultSet.h */,
+			);
+			path = yd_fmdb;
+			sourceTree = "<group>";
+		};
+		4DE41F341DC76945000EBD41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4DE41F351DC76945000EBD41 /* libsqlite3.0.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4DE41F371DC82A84000EBD41 /* yd_sdk */ = {
+			isa = PBXGroup;
+			children = (
+				4DDF90981DCC8BB7002DB881 /* preference */,
+				4D461E851DCB220200167955 /* ms_json_kit */,
+				4DE41F381DC82AA9000EBD41 /* database */,
+			);
+			path = yd_sdk;
+			sourceTree = "<group>";
+		};
+		4DE41F381DC82AA9000EBD41 /* database */ = {
+			isa = PBXGroup;
+			children = (
+				4DE41F391DC82AA9000EBD41 /* MSDatabaseQueue.h */,
+				4DE41F3A1DC82AA9000EBD41 /* MSDatabaseQueue.m */,
+				4DE41F3B1DC82AA9000EBD41 /* MSDB.h */,
+				4DE41F3C1DC82AA9000EBD41 /* MSDB.m */,
+				4DE41F3D1DC82AA9000EBD41 /* MSMTSDB.h */,
+				4DE41F3E1DC82AA9000EBD41 /* MSMTSDB.m */,
+			);
+			path = database;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		4DE41E311DC74B8F000EBD41 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE41E451DC74B8F000EBD41 /* YDHardwareSDK.h in Headers */,
+				4DE41F311DC75078000EBD41 /* YDFMDB.h in Headers */,
+				4D4205A71DE2DAC800067C1B /* YDOpenHardwareDP.h in Headers */,
+				4D4205A61DE2DAC800067C1B /* YDNetworkDelegate.h in Headers */,
+				4D4205AF1DE2E07300067C1B /* YDOpenHardwarePedometerNWDAO.h in Headers */,
+				4DDF90961DCC702A002DB881 /* YDOpenHardwareKit.h in Headers */,
+				4D461E731DCB214900167955 /* YDOpenHardwareIntelligentScale.h in Headers */,
+				4D461E751DCB214900167955 /* YDOpenHardwarePedometer.h in Headers */,
+				4D461E791DCB214900167955 /* YDOpenHardwareStatus.h in Headers */,
+				4D461E771DCB214900167955 /* YDOpenHardwareSleep.h in Headers */,
+				4D461E711DCB214900167955 /* YDOpenHardwareHeartRate.h in Headers */,
+				4D461E8C1DCB223000167955 /* YDOpenHardwareCoreDefine.h in Headers */,
+				4D461E6D1DCB214900167955 /* YDOpenHardwareSleepDBDAO.h in Headers */,
+				4DE41F3F1DC82AA9000EBD41 /* MSDatabaseQueue.h in Headers */,
+				4D461E631DCB214900167955 /* YDOpenHardwareDB.h in Headers */,
+				4DE41F331DC75078000EBD41 /* YDFMResultSet.h in Headers */,
+				4DE41F291DC75078000EBD41 /* YDFMDatabase.h in Headers */,
+				4D461E881DCB220200167955 /* MSJsonKit.h in Headers */,
+				4DDF909B1DCC8BDD002DB881 /* YDPreference.h in Headers */,
+				4DE41F431DC82AA9000EBD41 /* MSMTSDB.h in Headers */,
+				4DE41F2F1DC75078000EBD41 /* YDFMDatabaseQueue.h in Headers */,
+				4DE41F2B1DC75078000EBD41 /* YDFMDatabaseAdditions.h in Headers */,
+				4D461E691DCB214900167955 /* YDOpenHardwareIntelligentScaleDBDAO.h in Headers */,
+				4DE41F411DC82AA9000EBD41 /* MSDB.h in Headers */,
+				4D461E671DCB214900167955 /* YDOpenHardwareHeartRateDBDAO.h in Headers */,
+				4DE41F2D1DC75078000EBD41 /* YDFMDatabasePool.h in Headers */,
+				4D461E6B1DCB214900167955 /* YDOpenHardwarePedometerDBDAO.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		4DE41E331DC74B8F000EBD41 /* YDHardwareSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE41E481DC74B8F000EBD41 /* Build configuration list for PBXNativeTarget "YDHardwareSDK" */;
+			buildPhases = (
+				4DE41E2F1DC74B8F000EBD41 /* Sources */,
+				4DE41E301DC74B8F000EBD41 /* Frameworks */,
+				4DE41E311DC74B8F000EBD41 /* Headers */,
+				4DE41E321DC74B8F000EBD41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YDHardwareSDK;
+			productName = hardware_sdk;
+			productReference = 4DE41E341DC74B8F000EBD41 /* YDHardwareSDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4DE41E3C1DC74B8F000EBD41 /* YDHardwareSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4DE41E4B1DC74B8F000EBD41 /* Build configuration list for PBXNativeTarget "YDHardwareSDKTests" */;
+			buildPhases = (
+				4DE41E391DC74B8F000EBD41 /* Sources */,
+				4DE41E3A1DC74B8F000EBD41 /* Frameworks */,
+				4DE41E3B1DC74B8F000EBD41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4DE41E401DC74B8F000EBD41 /* PBXTargetDependency */,
+			);
+			name = YDHardwareSDKTests;
+			productName = hardware_sdkTests;
+			productReference = 4DE41E3D1DC74B8F000EBD41 /* YDHardwareSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4DE41E2B1DC74B8F000EBD41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = yuedong;
+				TargetAttributes = {
+					4DE41E331DC74B8F000EBD41 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Automatic;
+					};
+					4DE41E3C1DC74B8F000EBD41 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Automatic;
+					};
+					4DE41F171DC74D22000EBD41 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 2ERYNAFK87;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4DE41E2E1DC74B8F000EBD41 /* Build configuration list for PBXProject "YDHardwareSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 4DE41E2A1DC74B8F000EBD41;
+			productRefGroup = 4DE41E351DC74B8F000EBD41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4DE41E331DC74B8F000EBD41 /* YDHardwareSDK */,
+				4DE41E3C1DC74B8F000EBD41 /* YDHardwareSDKTests */,
+				4DE41F171DC74D22000EBD41 /* YDHardwareSDK_aggregate */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4DE41E321DC74B8F000EBD41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE41E3B1DC74B8F000EBD41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DE41F1B1DC74D4B000EBD41 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Sets the target folders and the final framework product.\n# 如果工程名称和Framework的Target名称不一样的话，要自定义FMKNAME\n# 例如: FMK_NAME = \"MyFramework\"\nFMK_NAME=${PROJECT_NAME}\n# Install dir will be the final output to the framework.\n# The following line create it in the root folder of the current project.\nINSTALL_DIR=${SRCROOT}/Products/${FMK_NAME}.framework\n# Working dir will be deleted after the framework creation.\nWRK_DIR=build\nDEVICE_DIR=${WRK_DIR}/Release-iphoneos/${FMK_NAME}.framework\nSIMULATOR_DIR=${WRK_DIR}/Release-iphonesimulator/${FMK_NAME}.framework\n# -configuration ${CONFIGURATION}\n# Clean and Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphoneos clean build\nxcodebuild -configuration \"Release\" -target \"${FMK_NAME}\" -sdk iphonesimulator clean build\n# Cleaning the oldest.\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\nmkdir -p \"${INSTALL_DIR}\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/\"\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FMK_NAME}\" \"${SIMULATOR_DIR}/${FMK_NAME}\" -output \"${INSTALL_DIR}/${FMK_NAME}\"\nrm -r \"${WRK_DIR}\"\nopen \"${INSTALL_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4DE41E2F1DC74B8F000EBD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D4205B01DE2E07300067C1B /* YDOpenHardwarePedometerNWDAO.m in Sources */,
+				4D461E681DCB214900167955 /* YDOpenHardwareHeartRateDBDAO.m in Sources */,
+				4DE41F301DC75078000EBD41 /* YDFMDatabaseQueue.m in Sources */,
+				4D461E721DCB214900167955 /* YDOpenHardwareHeartRate.m in Sources */,
+				4DDF90971DCC702A002DB881 /* YDOpenHardwareKit.m in Sources */,
+				4DE41F321DC75078000EBD41 /* YDFMResultSet.m in Sources */,
+				4D461E781DCB214900167955 /* YDOpenHardwareSleep.m in Sources */,
+				4D461E761DCB214900167955 /* YDOpenHardwarePedometer.m in Sources */,
+				4D461E891DCB220200167955 /* MSJsonKit.mm in Sources */,
+				4D461E6E1DCB214900167955 /* YDOpenHardwareSleepDBDAO.m in Sources */,
+				4DDF909C1DCC8BDD002DB881 /* YDPreference.m in Sources */,
+				4DE41F401DC82AA9000EBD41 /* MSDatabaseQueue.m in Sources */,
+				4DE41F2E1DC75078000EBD41 /* YDFMDatabasePool.m in Sources */,
+				4DE41F421DC82AA9000EBD41 /* MSDB.m in Sources */,
+				4D461E6C1DCB214900167955 /* YDOpenHardwarePedometerDBDAO.m in Sources */,
+				4DE41F2C1DC75078000EBD41 /* YDFMDatabaseAdditions.m in Sources */,
+				4D461E641DCB214900167955 /* YDOpenHardwareDB.m in Sources */,
+				4DE41F441DC82AA9000EBD41 /* MSMTSDB.m in Sources */,
+				4D461E741DCB214900167955 /* YDOpenHardwareIntelligentScale.m in Sources */,
+				4DE41F2A1DC75078000EBD41 /* YDFMDatabase.m in Sources */,
+				4D4205A81DE2DAC800067C1B /* YDOpenHardwareDP.m in Sources */,
+				4D461E6A1DCB214900167955 /* YDOpenHardwareIntelligentScaleDBDAO.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4DE41E391DC74B8F000EBD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4DE41E431DC74B8F000EBD41 /* hardware_sdkTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4DE41E401DC74B8F000EBD41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4DE41E331DC74B8F000EBD41 /* YDHardwareSDK */;
+			targetProxy = 4DE41E3F1DC74B8F000EBD41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4DE41E461DC74B8F000EBD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4DE41E471DC74B8F000EBD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		4DE41E491DC74B8F000EBD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = hardware_sdk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sport.yuedong.hardware-sdk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4DE41E4A1DC74B8F000EBD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = hardware_sdk/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sport.yuedong.hardware-sdk";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4DE41E4C1DC74B8F000EBD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
+				INFOPLIST_FILE = hardware_sdkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sport.yuedong.hardware-sdkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4DE41E4D1DC74B8F000EBD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
+				INFOPLIST_FILE = hardware_sdkTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.sport.yuedong.hardware-sdkTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4DE41F191DC74D23000EBD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4DE41F1A1DC74D23000EBD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2ERYNAFK87;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4DE41E2E1DC74B8F000EBD41 /* Build configuration list for PBXProject "YDHardwareSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE41E461DC74B8F000EBD41 /* Debug */,
+				4DE41E471DC74B8F000EBD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE41E481DC74B8F000EBD41 /* Build configuration list for PBXNativeTarget "YDHardwareSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE41E491DC74B8F000EBD41 /* Debug */,
+				4DE41E4A1DC74B8F000EBD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE41E4B1DC74B8F000EBD41 /* Build configuration list for PBXNativeTarget "YDHardwareSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE41E4C1DC74B8F000EBD41 /* Debug */,
+				4DE41E4D1DC74B8F000EBD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4DE41F181DC74D23000EBD41 /* Build configuration list for PBXAggregateTarget "YDHardwareSDK_aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DE41F191DC74D23000EBD41 /* Debug */,
+				4DE41F1A1DC74D23000EBD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4DE41E2B1DC74B8F000EBD41 /* Project object */;
+}

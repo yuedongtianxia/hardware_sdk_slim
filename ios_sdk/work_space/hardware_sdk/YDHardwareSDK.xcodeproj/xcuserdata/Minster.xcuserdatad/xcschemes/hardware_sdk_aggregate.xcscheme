@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0800"
+   LastUpgradeVersion = "0810"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4DE41E331DC74B8F000EBD41"
-               BuildableName = "hardware_sdk.framework"
-               BlueprintName = "hardware_sdk"
-               ReferencedContainer = "container:hardware_sdk.xcodeproj">
+               BlueprintIdentifier = "4DE41F171DC74D22000EBD41"
+               BuildableName = "YDHardwareSDK_aggregate"
+               BlueprintName = "YDHardwareSDK_aggregate"
+               ReferencedContainer = "container:YDHardwareSDK.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -28,26 +28,7 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "4DE41E3C1DC74B8F000EBD41"
-               BuildableName = "hardware_sdkTests.xctest"
-               BlueprintName = "hardware_sdkTests"
-               ReferencedContainer = "container:hardware_sdk.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4DE41E331DC74B8F000EBD41"
-            BuildableName = "hardware_sdk.framework"
-            BlueprintName = "hardware_sdk"
-            ReferencedContainer = "container:hardware_sdk.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -64,10 +45,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4DE41E331DC74B8F000EBD41"
-            BuildableName = "hardware_sdk.framework"
-            BlueprintName = "hardware_sdk"
-            ReferencedContainer = "container:hardware_sdk.xcodeproj">
+            BlueprintIdentifier = "4DE41F171DC74D22000EBD41"
+            BuildableName = "YDHardwareSDK_aggregate"
+            BlueprintName = "YDHardwareSDK_aggregate"
+            ReferencedContainer = "container:YDHardwareSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -82,10 +63,10 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "4DE41E331DC74B8F000EBD41"
-            BuildableName = "hardware_sdk.framework"
-            BlueprintName = "hardware_sdk"
-            ReferencedContainer = "container:hardware_sdk.xcodeproj">
+            BlueprintIdentifier = "4DE41F171DC74D22000EBD41"
+            BuildableName = "YDHardwareSDK_aggregate"
+            BlueprintName = "YDHardwareSDK_aggregate"
+            ReferencedContainer = "container:YDHardwareSDK.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </ProfileAction>

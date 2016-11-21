@@ -7,6 +7,8 @@
 //
 
 #import "AppDelegate.h"
+#import <YDHardwareSDK/YDHardwareSDK.h>
+#import "NetworkImp.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +19,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [YDOpenHardwareKit shared].appKey = @"10016";
+    [YDOpenHardwareKit shared].networkDelegate = [NetworkImp shared];
     return YES;
 }
 
@@ -45,6 +49,30 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+- (BOOL)application:(UIApplication *)application handleOpenURL:(NSURL *)url {
+    return NO;
+}
+- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url sourceApplication:(nullable NSString *)sourceApplication annotation:(id)annotation {
+    if ([url.scheme isEqualToString:@"yd-open-api-10016"]) {
+        return [[YDOpenHardwareKit shared] handleUrl:url application:application];
+    }
+    return NO;
+}
+
+
+//#if UIKIT_STRING_ENUMS
+//typedef NSString * UIApplicationOpenURLOptionsKey NS_EXTENSIBLE_STRING_ENUM;
+//#else
+//typedef NSString * UIApplicationOpenURLOptionsKey;
+//#endif
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options {
+    if ([url.scheme isEqualToString:@"yd-open-api-10016"]) {
+        return [[YDOpenHardwareKit shared] handleUrl:url application:app];
+    }
+    return NO;
 }
 
 

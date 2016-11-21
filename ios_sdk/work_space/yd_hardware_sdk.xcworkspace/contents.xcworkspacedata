@@ -5,6 +5,6 @@
       location = "group:hardware_demo/hardware_demo.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:hardware_sdk/hardware_sdk.xcodeproj">
+      location = "group:/Users/Minster/workSpace/openSource/git/hardware_sdk_slim/ios_sdk/work_space/hardware_sdk/YDHardwareSDK.xcodeproj">
    </FileRef>
 </Workspace>
