@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ly8-r0-mli">
+                                <rect key="frame" x="169" y="50" width="37" height="34"/>
+                                <state key="normal" title="授权">
+                                    <color key="titleColor" red="0.10980392156862745" green="0.75294117647058822" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.10980392156862745" green="0.75294117647058822" blue="0.098039215686274508" alpha="0.5" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toAuth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wTc-mS-wDM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wpr-fd-u7B">
+                                <rect key="frame" x="150.5" y="94" width="74" height="34"/>
+                                <state key="normal" title="取消授权">
+                                    <color key="titleColor" red="0.10980392156862745" green="0.75294117647058822" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.10980392156862745" green="0.75294117647058822" blue="0.098039215686274508" alpha="0.5" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toUnAuth:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T2j-uH-084"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qhT-CU-340">
+                                <rect key="frame" x="150.5" y="138" width="74" height="34"/>
+                                <state key="normal" title="插入数据">
+                                    <color key="titleColor" red="0.10980392156862745" green="0.75294117647058822" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.10980392156862745" green="0.75294117647058822" blue="0.098039215686274508" alpha="0.5" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toInsertRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xXU-Z6-u3C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2p3-1S-eSw">
+                                <rect key="frame" x="150.5" y="182" width="74" height="34"/>
+                                <state key="normal" title="同步数据">
+                                    <color key="titleColor" red="0.10980392156862745" green="0.75294117647058822" blue="0.098039215686274508" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.10980392156862745" green="0.75294117647058822" blue="0.098039215686274508" alpha="0.5" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toSyncRecord:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ilp-iS-sw7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bjx-Ng-Ihb">
+                                <rect key="frame" x="131.5" y="226" width="111" height="34"/>
+                                <state key="normal" title="查看授权情况">
+                                    <color key="titleColor" red="0.10980392160000001" green="0.75294117650000003" blue="0.098039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" red="0.10980392160000001" green="0.75294117650000003" blue="0.098039215690000001" alpha="0.5" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="toCheckAuthStatus:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IAX-GL-KwP"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wpr-fd-u7B" firstAttribute="top" secondItem="ly8-r0-mli" secondAttribute="bottom" constant="10" id="D3r-WV-pvB"/>
+                            <constraint firstItem="bjx-Ng-Ihb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EFg-v2-Jp1"/>
+                            <constraint firstItem="2p3-1S-eSw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GsJ-GG-Ohu"/>
+                            <constraint firstItem="qhT-CU-340" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LcA-ll-SRq"/>
+                            <constraint firstItem="wpr-fd-u7B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="PCT-KD-wVN"/>
+                            <constraint firstItem="qhT-CU-340" firstAttribute="top" secondItem="wpr-fd-u7B" secondAttribute="bottom" constant="10" id="THf-K6-uMZ"/>
+                            <constraint firstItem="ly8-r0-mli" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="W2Z-PM-S0H"/>
+                            <constraint firstItem="bjx-Ng-Ihb" firstAttribute="top" secondItem="2p3-1S-eSw" secondAttribute="bottom" constant="10" id="akG-MO-GzP"/>
+                            <constraint firstItem="ly8-r0-mli" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="n9R-iB-5G2"/>
+                            <constraint firstItem="2p3-1S-eSw" firstAttribute="top" secondItem="qhT-CU-340" secondAttribute="bottom" constant="10" id="r6j-mD-cYf"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
